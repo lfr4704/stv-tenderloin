@@ -1,0 +1,100 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>To Do List</title>
+  <meta name="description" content="Things to focus on today">
+  <meta name="author" content="Minda Aguhob">
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=1.0" />
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!--
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  ->
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4" >To Do List</h1>
+            <h4>Below are the things to focus on today.</h4>
+        </div>
+        
+        <br>
+        <input class='form-control' placeholder="thing to do">
+        <br>
+        <button id="send" class="btn btn-success">Submit</button>
+        
+    </div>
+    
+    
+    <div id="output">
+        
+        
+        
+    </div>
+    
+    <script>
+    /* global $ io from Jade's github, 4/10/18 class missed from NIH grant*/
+   
+    var socket = io();
+    socket.on('important', function(data) {
+        console.log(data); //will be adding this later to the area below "To Do" box 
+        $("#output").html("");
+        
+        var htmlString = "<ul>";
+    
+    //data is ^^
+        
+        for (var i = 0; i < data.length; i++) {
+            htmlString = htmlString + "<li class='note'>" + data[i].notes + "</li>";
+        }
+        
+            htmlString += "</ul>";
+        
+            $("#output").append(htmlString);
+        });
+        
+        var text = $("#input").val();
+        var note = {note: text};
+    
+        $('#submit').click(function() {
+            text = $("#input").val();
+            note = {notes: text};
+            sendToServer(note);
+    });
+    
+    
+    function sendToServer(sendData) {
+        $.post('http://127.0.0.1:3000/submitNote', sendData);
+        
+    }
+     //don't use localhost:3000 bc won't recognize socket.io script in head
+    function getNotes(){
+        $.get('http://127.0.0.1:3000/getNotes', function(data){
+            console.log(data);
+        }); 
+    }  
+        
+    </script>
+</body>
+</html>
