@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html lang="en">
@@ -61,11 +62,11 @@
 	
   <h2 id="about">ABOUT</h2>
     <h3>Background</h3>
-		<p>The current Tenderloin Stop the Violence Movement is being led by a coalition of young people in the community. After losing their closest friend in April 2017 to unnecessary violence, the youth gathered through grief and decided on immediate change. Change became the production of the “T.L Stop the Violence Event” that will address building relationships with law enforcement, mentorship, employment, housing and mental health. Many young people in the T.L. connect through hip hop therefore we are bringing the different nationalities together through music. We believe saving lives through multicultural hip hop connections is our future.</p>
+		<p>The Tenderloin Stop the Violence Movement is led by a coalition of young people in our community. After losing our closest friend in April 2017 to unnecessary violence, we gathered in our grief and decided to make immediate change. Our interest in change led to the production of the “T.L. Stop the Violence Event” to build relationships with law enforcement, and create mentorship, employment, housing and mental health services. Many young people in the T.L. connect through hip hop, bringing the different nationalities together through music. We believe saving lives through multicultural hip hop connections is our future.</p>
 	<h3>History</h3>
-		<p>The history of the Tenderloin has been rich in music, theater, arts and culture since the 1940s. In July 2008, the area was designated as a historic district on the National Register of Historic Places. Overtime social issues and crime has also been present. According to the January 6th, 2014 Chronicle article the Tenderloin seen one of its highest rate of crime and violence. Over the years there has been an uprising in violence. In 2017 up to present day the violence is out of control. This event will assist us in getting back to our roots through music, arts and culture.</p>
+		<p>The history of the Tenderloin has been rich with music, theater, arts and culture since the 1940s. In July 2008, the area was designated as a historic district on the National Register of Historic Places.</p> <p></p>Over time, social issues and crime has also been present. According to a January 6th, 2014 Chronicle article, the Tenderloin is seeing its highest rates of crime and violence. Over the years there has been an uprising in violence. In 2017 up to present day the violence is out of control. This event will assist us in getting back to our roots through music, arts and culture.</p>
 	<h3>Displacement</h3>
-		<p>The Tenderloin is considered an undesirable place to live which has driven down the costs of rent. Immigrants and poor communities from all over San Francisco have transcended into the Tenderloin for low cost living in SRO’s, subsidized housing and weekly hotel rentals. Homelessness due to the rapid gentrification in San Francisco has hit the Fillmore, Bayview/Hunter’s Point, Mission, Visitation Valley and Lake View the hardest. These neighborhoods were known as low income communities and were suffering from the plague of violence, drugs and mental health issues. Generations of residents from San Francisco are being displaced and this is impacting their children, economic welfare, social status and health.</p>
+		<p>The Tenderloin is considered an undesirable place to live, which has driven down the costs of rent. Immigrants and poor communities from all over San Francisco transcended into the Tenderloin for low cost living in SRO’s, subsidized housing and weekly hotel rentals. Homelessness due to the rapid gentrification in San Francisco has hit the Fillmore, Bayview/Hunter’s Point, Mission, Visitation Valley and Lake View the hardest. These neighborhoods were known as low income communities and suffer from the plague of violence, drugs and mental health issues. Generations of residents from San Francisco are being displaced and impacts their children, economic welfare, social status and health.</p>
 	
   <h2 id="programs">PROGRAMS</h2>
 	<p>As the violence continues to erupt in the T.L. young people, the community, law enforcement and city officials have decided to gather to produce the “T.L. Stop the Violence Event.” The serious efforts of planning this event will not only save lives but will empower, educate and connect the T.L. for a better future. Moving forward the event will produce mentorship opportunities, housing, employment and mental health resources. Please see examples  below:</p>
@@ -369,6 +370,54 @@ var uluru = new google.maps.LatLng(37.799485, -122.425320);
             </div> 
           </div>        
           <!-- /Boxes de Acoes -->
+            
+        <!-- Minda's volunteer form (mongoose--mongodbb) -->
+            
+
+
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4">Volunteer</h1>
+        </div>
+        <br>
+        <input class='form-control' placeholder="name">
+        <br>
+        <button id="send" class="btn btn-success" >Submit</button>
+        
+    </div>
+    
+    
+    <div id="messages">
+        
+        
+        
+    </div>
+    <script>
+        $(() => {
+            $("#send").click(()=>{
+                
+          addMessages({name: 'Tim', message: 'hello'})
+                
+            })
+            getMessages()
+          })
+    
+    function addMessages(message){
+        $("#messages").append(`<h4> ${message.name}</h4> <p> ${message.message} </p>`)
+    
+    }
+    
+    function getMessages() {
+        $.get('localhost:3000/messages'), (data) => {
+            console.log(data)
+        }
+    }
+        
+    </script>
+
+
+            <!--end of volunteer form -->
             
         </div>
       </div>
