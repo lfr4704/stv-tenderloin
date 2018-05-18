@@ -33,6 +33,14 @@
 	
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+
+  <!--jade links-->
+
+  <link rel="icon" href="img/globe.png">
+  <!--<link rel="stylesheet" href="css/reset.css?v=1.0">-->
+  <link rel="stylesheet" href="css/styles-jade.css?v=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <script src="js/scripts-jade.js"></script>
   
       <style>
        #map {
@@ -45,16 +53,33 @@
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <div class="nav">
-  	<ul>
-	    <li><a href="#about">ABOUT</a></li>
-			<li><a href="#programs">PROGRAMS</a></li>
-	    <li><a href="#resources">RESOURCES</a></li>
-	    <li><a href="#events">EVENTS</a></li>
-			<li><a href="#calendar">CALENDAR</a></li>
-	    <li><a href="#contact">CONTACT</a></li>
+    <ul>
+      <li><img class="logo" src="img/tl-logo.svg" /></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Get Involved</a></li>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </div>
+
+<div class="dropdown nav full">
+  <button onclick="myFunction()" class="dropbtn"><i class="fas fa-arrow-alt-circle-down"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Events</a>
+    <a href="#">Get Involved</a>
+    <a href="#">Donate</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<!-- Navigation Bar END -->
 
   <h1>TL Stop the Violence</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia deleniti quis dolorum tenetur nemo incidunt iure fugit fuga itaque sit consequuntur, vitae dolores iste repellendus neque provident quidem? Nobis!</p>
