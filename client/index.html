@@ -649,26 +649,27 @@ var uluru = new google.maps.LatLng(37.799485, -122.425320);
 
 	      <div class="col-lg-6 imageStyle" id="wrapper">
 	      <div class="card">
-	      	<div class="card-block">
+	      	<div class="card-block" style="background-color: blue;">
 	      		
-	      		<div class="">
-	      			<div class="amountBoxStyling">
+	      		<div class="container">
+	      			<div class="donation-button">
 	      			<button id="nemo_radioButton-0" class="btn btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$25</button>
 	      		</div>
-	      		<div class="amountBoxStyling">
+	      		<div class="donation-button">
 	      			<button id="nemo_radioButton-1" class="btn btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$50</button>
 	      		</div>
-	      		<div class="amountBoxStyling">
+	      		<div class="donation-button">
 	      			<button id="nemo_radioButton-2" class="btn btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$75</button>
 	      		</div>
-	      		<div class="amountBoxStyling">
+	      		<div class="donation-button">
 	      			<button id="nemo_radioButton-3" class="btn btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$100</button>
 	      		</div>
-	      		<div class="amountBoxStyling">
+	      		<div class="donation-button">
 	      			<button id="nemo_radioButton-4" class="btn btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$250</button>
 	      		</div>
 	      			<div style="display: inline-block;"><input type="text" id="nemo_inputAmount" value="" autocomplete="off" placeholder="Other (USD)" required="" class="css-1fbkudd"></div>
 	      		</div>
+	      		
 	      		<form action="/fundraiser/charity/2084229/xo/create" method="post">
 	      			<input type="hidden" name="_csrf" value="6VIt3R0BQgh09g0A3ifJipSgafivw7W+Pud68=">
 	      			<input type="hidden" name="npid" value="2084229">
@@ -678,12 +679,15 @@ var uluru = new google.maps.LatLng(37.799485, -122.425320);
 	      			<input type="hidden" name="currency" value="USD"><input type="hidden" name="amount" value="">
 	      			<div class="">
 	      			</div>
+	      			
 	      			<div class="">
 	      				<input type="checkbox" id="nonanonymous-checkbox" name="nonanonymous-checkbox" value="on">
 	      				<label class="vx_small-text" for="nonanonymous-checkbox">Share my name and email with this charity.</label>
 	      			</div>
+	      			
 	      			<input type="submit" id="nemo_donatebuttonNPO" value="Donate Now" class="css-1uogh3w btn btn-small btn-primary">
 	      		</form>
+	      		
 	      			<div class="">
 	      				<div class=>
 	      					<ul class="">
@@ -694,6 +698,7 @@ var uluru = new google.maps.LatLng(37.799485, -122.425320);
 	      					</ul>
 	      				</div>
 	      			</div>
+	      			
 	      		</div>
 	      	</div>	
 	      </div><!--end responsive design column-->
