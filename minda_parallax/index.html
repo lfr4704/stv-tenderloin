@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 
-  <title>Minda Aguhob</title>
+  <title>Minda's Parallax to push in</title>
   <meta name="description" content="About Minda Aguhob">
   <meta name="author" content="Minda Aguhob">
   <link rel="stylesheet" href="css/style2.css?v=1.0">
@@ -12,18 +12,6 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-    <script>
-    /* Project hover effect */   
-    $( document ).ready( function () {
-        $(".placeholder img").hover( function(e) {
-        $(this).animate({opacity: 1.0, height: "auto", width: "220px"}, 150);
-        }, function() {
-        $(this).animate({opacity: 0.5, height: "auto", width: "200px"}, 150);
-        });
-    });
-    /* end */
-
-    </script>    
 
     <style>
             
@@ -38,7 +26,9 @@ body {
     max-width: 1000px;
 /*    padding: 2em 2em 1px;*/
 }
-            
+        
+/* Background pic */
+
 #box1 {
     content:"";display:table;clear:both;
     height: 50vh;
@@ -49,7 +39,9 @@ body {
     filter: alpha(opacity=50);/* For IE8 and earlier */
     background-attachment: fixed;
     }
-        
+
+/* Box 2 not used */
+
 #box2{
     content:"";display:table;clear:both;
     height: 15vh;
@@ -60,6 +52,8 @@ body {
     filter: alpha(opacity=50); /* For IE8 and earlier */ 
     background-attachment: fixed;
     }
+        
+/* Background pic 2 */
         
 #box3{
     content:"";display:table;clear:both;
@@ -72,6 +66,8 @@ body {
     background-attachment: fixed;
     }
         
+/* Box behind Tools */
+
 #box4{
     height: 50%;
     width: 100%;
@@ -166,6 +162,9 @@ img:hover {
 </head>
 
 <body>
+    
+<!-- Navigation bar should go up here -->
+<!-- MInda Aguhob, Humane Technologist -->
 <div id="box1">        
    <div style="background-color:rgba(0, 0, 0, 0.75);">
        <div style="background-attachment: fixed;"></div><a href="index2.html">
@@ -174,6 +173,9 @@ img:hover {
        <h3>Humane technologist</h3>
        <br />
     </div>
+    
+<!-- parallax  -->
+    
         <div class="earth"><a href="http://loveperforms.com"><img src="img/earth.svg" alt="earth" height="500" width="1000"></a></div>
 
         <div style="background-color:rgba(0,0,0, 0.95);">
