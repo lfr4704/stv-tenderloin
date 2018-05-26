@@ -13,3 +13,54 @@ app.use(bodyParser.urlencoded({extended:false}))
 http.listen(8080);
 
 console.log("server is running");
+app.post('/submitVolunteer', (request, result) => {
+    
+    var text = fs.readFileSync('database.json', 'utf8');
+
+    var master = JSON.parse(text);
+    
+    master.volunteers.push(request.body);
+    
+    var vList = "";
+    
+    for (var i = 0; i < master.volunteers.length; i++) {
+        
+        vList += "Volunteer " + (i + 1) + "\n";
+        vList += master.volunteers[i].name + "\n";
+        vList += master.volunteers[i].email + "\n";
+        vList += master.volunteers[i].address + "\n\n";
+        
+    }
+    
+    fs.writeFileSync('readableVolunteers.txt', vList);
+    
+    master = JSON.stringify(master);
+    
+    fs.writeFileSync('database.json', master);
+    
+});
+
+app.post('/submitDonation'), (request,result) => {
+    var dollars = fs.readFileSync ('database.json', 'utf8');
+    
+    var file = JSON.parse(dollars);
+    
+    file.donations.push(request.body);
+    
+    var dList = "";
+    
+    for(var i =0; i <file.donations.length; i++){
+        
+        dList += "Donation " + (i +1) + "\n";
+        dList += file.donations[i].otherInput + "\n";
+        dList += file.donations[i].donationName + "\n";
+        dList += file.donations[i].donationEmail + "\n\n";
+        
+    }
+    
+    fs.writeFileSync('readableDonations.txt', dList);
+    
+    file = JSON.stringify(file);
+    
+    fs.writeFileSync('database.json', file);
+}
