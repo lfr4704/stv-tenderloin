@@ -19,7 +19,7 @@
     /*STOP THE VIOLENCE SNIPPET box*/
     .box1 {
     /* The image  */
-    background-image: url("img/C36.jpg");
+    /*background-image: url("assets/img/C36.jpg");*/
     /* Set a specific height */
     min-height: 600px;
     min-width: 100%;
