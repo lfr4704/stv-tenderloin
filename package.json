@@ -9,6 +9,7 @@
     "async": "~0.2.8",
     "body-parser": "^1.18.3",
     "express": "^3.2.6",
+    "nodemailer": "^4.6.4",
     "socket.io": "^1.7.4"
   }
 }

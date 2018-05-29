@@ -21,6 +21,7 @@ $(document).ready(() => {
         $.post("https://angular-test-eagarcia.c9users.io/submitVolunteer", volunteer);
     });
     
+
     console.log('TEST!');
     
     var donateButton = $("#donate-submit");

@@ -1,4 +1,5 @@
 const fs = require('fs');
+var nodemailer = require('nodemailer');
 const express = require('express');
 let bodyParser = require('body-parser'); //this helps understand object thru jason from the front end
 var app = express();
@@ -12,7 +13,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
 http.listen(8080);
 
+
 console.log("server is running");
+
 app.post('/submitVolunteer', (request, result) => {
     
     var text = fs.readFileSync('database.json', 'utf8');
@@ -38,6 +41,7 @@ app.post('/submitVolunteer', (request, result) => {
     
     fs.writeFileSync('database.json', master);
     
+
 });
 
 app.post('/submitDonation'), (request,result) => {
@@ -64,3 +68,6 @@ app.post('/submitDonation'), (request,result) => {
     
     fs.writeFileSync('database.json', file);
 }
+
+});
+
