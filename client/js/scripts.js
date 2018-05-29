@@ -21,4 +21,25 @@ $(document).ready(() => {
         $.post("https://angular-test-eagarcia.c9users.io/submitVolunteer", volunteer);
     });
     
+
+    console.log('TEST!');
+    
+    var donateButton = $("#donate-submit");
+    
+    donateButton.click(() => {
+        var otherInput = $("#input-amount").val();
+        var donationName = $("#input-amount").val();
+        var donationEmail = $("#input-amount").val();
+        
+        var donationAmount = {
+            "amount": otherInput,
+            "name": donationName,
+            "email": donationEmail
+        }
+        $.post("https://stv-tenderloin-lfr4704.c9users.io/submitDonation", donationAmount);
+    });
+    
+    
+    
 });
+

@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
 http.listen(8080);
 
+
+console.log("server is running");
+
 app.post('/submitVolunteer', (request, result) => {
     
     var text = fs.readFileSync('database.json', 'utf8');
@@ -38,4 +41,33 @@ app.post('/submitVolunteer', (request, result) => {
     
     fs.writeFileSync('database.json', master);
     
+
 });
+
+app.post('/submitDonation'), (request,result) => {
+    var dollars = fs.readFileSync ('database.json', 'utf8');
+    
+    var file = JSON.parse(dollars);
+    
+    file.donations.push(request.body);
+    
+    var dList = "";
+    
+    for(var i =0; i <file.donations.length; i++){
+        
+        dList += "Donation " + (i +1) + "\n";
+        dList += file.donations[i].otherInput + "\n";
+        dList += file.donations[i].donationName + "\n";
+        dList += file.donations[i].donationEmail + "\n\n";
+        
+    }
+    
+    fs.writeFileSync('readableDonations.txt', dList);
+    
+    file = JSON.stringify(file);
+    
+    fs.writeFileSync('database.json', file);
+}
+
+});
+

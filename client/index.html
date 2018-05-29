@@ -411,34 +411,85 @@ var uluru = new google.maps.LatLng(37.799485, -122.425320);
           </div>
           <!-- /Boxes de Acoes -->
 
-        <!-- Minda's volunteer form (mongoose--mongodbb) -->
 
 
-
-    <div class="container">
-        <br>
-        <div class="jumbotron">
-            <h1 class="display-4">Volunteer</h1>
-        </div>
-        <br>
-
-        <div class="form-group form_left">
-        <input id="volunteer-name" class='form-control' placeholder="Name">
-        </div>
-        <div class="form-group form_left">
-        <input id="volunteer-email" type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
-        </div>
-        <div class="form-group form_left">
-        <input id="volunteer-address" type="address" class="form-control" id="address" name="address" placeholder="Address" required="">
-        </div>
-          <br>
-            <button id="volunteer-submit" class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> send </button>
+	  <div class="tab-pane active" id="5a">
+	  <div class="container" id="wrapper">
+	    
+	  	<div class="row">
+	      <div class="col-lg-12 col-md-12 col-sm-12">
+	        <h1 class="header-title">Donate</h1>
+	        <p class="text-content"><span style="font-weight: 400;">Financial contributions and in-kind donations enable our programs. We need your support and partnership to do this work.</span></p>
+	      </div>
+	  	</div>
+	  	
+      
+  	    <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="charity-card">
+          <div class="">
+              <h1 class="card-title" style="text-align: center;">About this charitity</h1>
+              <h4 class="cardText">The Stop The Violence Coalition works to reduce the violence in the Tenderloin distric in San Francisco, CA. They provide the tenderloin residents with resources to housing, employment, financial and medical help.</h4>
+            </div>
           </div>
-    </div>    
-    </div><!--end of volunteer form -->
 
 
-   </div> <!--container end-->
+	      <div class="col-lg-6 col-md-6 col-sm-12">
+	      <div class="card-center">
+	      <div class="donation-card">
+	      	
+	      	<div>
+    	      <div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-0" class="btn-money btn-small btn-primary" style="margin-right: 10px;">$25</button>
+    	      		</div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-1" class="btn-money btn-small btn-primary" style="margin-right: 10px;">$50</button>
+    	      		</div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-2" class="btn-money btn-small btn-primary" style="margin-right: 10px;">$75</button>
+    	      		</div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-3" class="btn-money btn-small btn-primary" style="margin-right: 10px;">$100</button>
+    	      		</div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-4" class="btn-money btn-small btn-primary" style="margin-right: 10px;">$250</button>
+    	      		</div>
+    	      		<div class="donation-button">
+    	      			<button id="nemo_radioButton-4" class="btn-money btn-small btn-primary btnCustDonate" style="margin-right: 10px;">$500</button>
+    	      		</div>
+    	      			<div style="display: inline-block;">
+    	      			  <input type="text" id="input-amount" value="" autocomplete="off" placeholder="Other (USD)" required="" class="other">
+    	      			</div>
+    	      </div>
+	      		
+    	      		<form action="/fundraiser/charity/2084229/xo/create" method="post">
+    	      			<input type="hidden" name="_csrf" value="6VIt3R0BQgh09g0A3ifJipSgafivw7W+Pud68=">
+    	      			<input type="hidden" name="npid" value="2084229">
+    	      			<input type="hidden" name="eventUrl" value="eventUrl">
+    	      			<input type="hidden" name="name" value="Donation via PayPal">
+    	      			<input type="hidden" name="nonanonymous" value="true">
+    	      			<input type="hidden" name="currency" value="USD"><input type="hidden" name="amount" value="">
+    	      			<div class="">
+    	      				<input type="checkbox" id="nonanonymous-checkbox" name="nonanonymous-checkbox" value="on">
+    	      				<label class="" for="nonanonymous-checkbox">Share my name and email with this charity.</label>
+    	      			</div>
+    	      			<input type="submit" id="donate-submit" value="Donate Now" class="btn btn-small btn-primary">
+    	      		</form>
+	      	</div>		
+	      				<div class="list-items">
+	      					<ul>
+	      						<li>Your donation will be made to Stop The Violence Coallition Giving Fund, a 501(c)(3) charity.</li>
+	      						<li>The charity you recommend typically will receive the funds within the same business day of your original donation.</li>
+	      					</ul>
+	      				</div>
+	     
+	      		</div><!--end card-block-->
+	      	</div>	<!--end donation-card-->
+	      	</div><!--end of card-center-->
+	      	
+	    </div><!--end of container-->
+	  </div><!--end of 5a section-->
+ 
    <!-- My personal js script copied here to solve visibility problem wiht google maps in tab 3a-->
 <script src='script.js'></script>
   </div> <!--tab 3a end-->
