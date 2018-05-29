@@ -44,16 +44,14 @@ app.post('/submitVolunteer', (request, result) => {
 
 });
 
-app.post('/submitDonation'), (request,result) => {
+app.post('/submitDonation', (request,result) => {
+    
     var dollars = fs.readFileSync ('database.json', 'utf8');
-    
     var file = JSON.parse(dollars);
-    
     file.donations.push(request.body);
-    
     var dList = "";
     
-    for(var i =0; i <file.donations.length; i++){
+    for (var i = 0; i < file.donations.length; i++) {
         
         dList += "Donation " + (i +1) + "\n";
         dList += file.donations[i].otherInput + "\n";
@@ -67,7 +65,6 @@ app.post('/submitDonation'), (request,result) => {
     file = JSON.stringify(file);
     
     fs.writeFileSync('database.json', file);
-}
 
 });
 
