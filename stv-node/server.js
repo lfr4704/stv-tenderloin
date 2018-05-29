@@ -18,6 +18,8 @@ console.log("server is running");
 
 app.post('/submitVolunteer', (request, result) => {
     
+    console.log("Recieved Volunteer Info");
+    
     var text = fs.readFileSync('database.json', 'utf8');
 
     var master = JSON.parse(text);

@@ -18,7 +18,7 @@ $(document).ready(() => {
         }
         
         // UPDATE URL TO OFFICIAL SERVER
-        $.post("https://angular-test-eagarcia.c9users.io/submitVolunteer", volunteer);
+        $.post("https://stv-eagarcia.c9users.io/client/submitVolunteer", volunteer);
     });
     
 
