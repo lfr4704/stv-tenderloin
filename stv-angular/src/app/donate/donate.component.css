@@ -1,0 +1,81 @@
+.donation-card {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding-top: 20px;
+    padding-left: 30px;
+    max-width: 330px;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.button-container {
+    padding-left: 20px;
+}
+
+.donation-button {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.btn-money {
+    width: 55px;
+    height: 31px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.other {
+    width: 195px;
+    min-width: 80px;
+    height: 31px;
+    box-shadow: none;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(212, 217, 220);
+    border-image: initial;
+    border-radius: 5px;
+    padding: 0px 0px 0px 13px;
+}
+
+#wrapper {
+    text-align: center;
+    /*background-color:red;*/
+}
+
+.charity-card {
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 1px solid #e0e0e0;
+}
+
+.card-center {
+    /* background-color:purple;*/
+}
+
+.text-content {
+    text-align: center;
+
+}
+
+.list-items {
+    margin-right: 10px;
+}
