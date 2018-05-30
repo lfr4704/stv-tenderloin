@@ -55,57 +55,7 @@ p {
   margin: 10px;
 }
 
-/* Logo */
-.logo {
-  margin: 5px 5px 5px 5px;
-  width: 100px;
-
-  text-align: center;
-
-}
-/* Logo END */
-
 /* Article END */
-
-/* Navigation Bar */
-.nav{
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.nav ul li {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 25px;
-}
-
-.nav ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav li{
-  font-family: 'Fjalla One', monospace;
-}
-
-.nav a{
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-}
-
-a:visited {
-  color: black;
-}
-
-.dropdown {
-  position: relative;
-  display: none;
-}
-
-/* Navigation Bar END */
 
 /* Copyright */
 .sign {
