@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /stv-tenderloin/stv-node/client/js/.htpasswd
+require valid-user
