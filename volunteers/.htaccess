@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /127.0.0.1:51125/volunteers/.htpasswd
+require valid-user
