@@ -16,10 +16,10 @@
         height: 315px;
         width: 100%;
        }
-    /*STOP THE VIOLENCE SNIPPET box*/
+    /*STOP THE VIOLENCE video box*/
     .box1 {
     /* The image  */
-    /*background-image: url("assets/img/C36.jpg");*/
+    /*background-image: url(/assets/img/parallax/.jpg);*/
     /* Set a specific height */
     min-height: 600px;
     min-width: 100%;
