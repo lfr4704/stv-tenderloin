@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+node_modules/
+.c9/
+>>>>>>> master

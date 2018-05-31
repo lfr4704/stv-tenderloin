@@ -1,0 +1,131 @@
+
+    body {
+         min-width: 100%;
+
+     }
+    h2, h3 {
+         text-align: center;
+         color:white;
+         font-weight: 300;
+     }
+
+    h1 {
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    font-weight: 300;
+     }
+
+     p {
+         font-size: 25px;
+         font-family: 'Arial';font-size: 22px;
+         font-weight: 300;
+         color:white;
+     }
+
+       #map {
+        height: 315px;
+        width: 100%;
+       }
+
+    /*STOP THE VIOLENCE SNIPPET box*/
+    .box1 {
+    /* The image  */
+    background-image: url("../img/c7.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /*opacity*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+}
+/*about header box*/
+ .box2 {
+    /* The image  */
+    background-image: url("../img/c25.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*history header*/
+  .box3 {
+    /* The image  */
+    background-image: url("../img/c26.JPG");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*displacement header*/
+ .box4 {
+    /* The image  */
+    background-image: url("../img/c22.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Services_PRORAMS header*/
+.box5 {
+    /* The image  */
+    background-image: url("../img/C40.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  background-color: black;
+}
+
+.flex-container > div {
+  background-color: grey;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+/*STOP THE VIOLENCE SNIPPET*/
+.box6 {
+    /* The image  */
+    background-image: url("../img/c41.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box7 {
+    /* The image  */
+    background-image: url("../img/c44.JPG");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

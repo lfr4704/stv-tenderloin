@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Josefin+Slab');
+
+body {
+    color: white;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    font-size: 48px;
+    font-family: 'Josefin Slab', serif;
+}
