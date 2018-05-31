@@ -23,11 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/bootstrap.min.css",
-              "src/assets/bootstrap-responsive.min.css"
+              "src/styles.css"
               ],
-            "scripts": ["src/assets/bootstrap.min.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
