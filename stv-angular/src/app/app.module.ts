@@ -9,6 +9,7 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
 import { DonateComponent } from './donate/donate.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProgramsComponent } from './programs/programs.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProgramsComponent } from './programs/programs.component';
     VolunteerComponent,
     DonateComponent,
     ContactComponent,
-    ProgramsComponent
+    ProgramsComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule
