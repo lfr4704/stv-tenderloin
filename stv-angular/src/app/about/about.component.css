@@ -1,6 +1,6 @@
 .box2 {
     /* The image  */
-    background-image: url(/assets/img/parallax/C36.jpg);
+    background-image: url(../assets/img/parallax/c25.png);
     /* Set a specific height */
     min-height: 600px;
     min-width: 100%;
@@ -9,4 +9,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 25px;
+}
+/*history header*/
+  .box3 {
+    /* The image  */
+    background-image: url(../../assets/img/parallax/c26.jpg);
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*displacement header*/
+ .box4 {
+    /* The image  */
+    background-image: url(../../assets/img/parallax/c22.png);
+    /* Set a specific height */
+    min-height: 500px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
