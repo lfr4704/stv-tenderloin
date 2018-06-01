@@ -1,0 +1,10 @@
+#container {
+    width: 100%;
+    background-color:black;
+    padding: 20px;
+}
+
+#container div {
+    width: 490px;
+    margin: 0 auto;
+}

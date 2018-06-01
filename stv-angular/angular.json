@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
               ],
-            "scripts": []
+            "scripts": [
+              "https://maps.googleapis.com/maps/api/js?key=AIzaSyCR-dKqpdB-2LTtiIWD3AR4maFVwVmPns4&callback=initMap"]
           },
           "configurations": {
             "production": {
