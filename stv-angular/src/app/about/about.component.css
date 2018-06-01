@@ -1,12 +1,47 @@
-.box2 {
+/*#box2 {*/
     /* The image  */
-    background-image: url(/assets/img/parallax/C36.jpg);
+    /*background-image: url(/assets/img/parallax/C25.png);*/
     /* Set a specific height */
-    min-height: 600px;
-    min-width: 100%;
+  
+    /*min-width: 100%;*/
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 25px;
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% auto;*/
+    /*padding: 5px;*/
+    /*background: black;*/
+   
+   
+
+/*}*/
+
+#video{
+text-align: center;
 }
+
+#p1{
+    text-align: center;
+}
+
+#p{
+text-align: center
+}
+
+#p2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+#img{
+text-align:center;
+margin-left: 50px;
+margin-right: 25px;
+padding: 40px;
+}
+
+#images3{
+    text-align: center;
+    margin-top: 70px;
+}
+

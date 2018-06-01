@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Cute+Font|Do+Hyeon|Fjalla+One|Playfair+Display');
  body {
          min-width: 100%;
+        
          
      }
     h1,h2,h3 {
@@ -18,17 +19,18 @@
        }
     /*STOP THE VIOLENCE SNIPPET box*/
     .box1 {
+      
     /* The image  */
     /*background-image: url("assets/img/C36.jpg");*/
     /* Set a specific height */
-    min-height: 600px;
-    min-width: 100%;
+    /*min-width: 100%;*/
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 25px;
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*margin-top: 25px;*/
 }
+
 
 
 
@@ -117,4 +119,19 @@ p {
   .show {display:block;}
   /********************** END **************************/
 
+}
+.videoWrapper{
+  position:relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  
+}
+
+.videoWrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
