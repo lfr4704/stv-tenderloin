@@ -10,6 +10,9 @@ export class DonateComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("ng ON INIT");
   }
+  
+  
 
 }
