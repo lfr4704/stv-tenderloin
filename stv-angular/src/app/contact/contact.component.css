@@ -151,3 +151,7 @@
         margin-top: 25px;
     }
 }
+       #map {
+        height: 315px;
+        width: 100%;
+       }
