@@ -1,0 +1,37 @@
+/*Services_PRORAMS header*/
+.box5 {
+    /* The image  */
+    background-image: url("/assets/img/C40.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  background-color: black;
+}
+
+.flex-container > div {
+  background-color: grey;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/*STOP THE VIOLENCE SNIPPET*/
+.box6 {
+    /* The image  */
+    background-image: url("/assets/img/c41.png");
+    /* Set a specific height */
+    min-height: 600px;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
