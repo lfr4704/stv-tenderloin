@@ -11,10 +11,5 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-  ngAfterViewInit() {
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-  }
 
 }
